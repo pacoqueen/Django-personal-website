@@ -2,7 +2,7 @@
 
 This is a fork from Django-based personal website created by [Vlad Moroshan](https://github.com/vladislavalerievich/Django-personal-website).
 
-[Live site](https://qinn.es)
+[Live site](https://qinn.es).
 
 # Installation and Running
 
