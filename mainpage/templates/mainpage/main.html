@@ -16,7 +16,7 @@
     })(window,document,'script','dataLayer','GTM-MNSQKRC');</script>
   <!-- End Google Tag Manager -->
 
-  <link type="text/css" href="https://fonts.googleapis.com/css?family=Chakra Petch|Montserrat|Raleway" rel="stylesheet">
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Abril Fatface|Barlow Condensed|Chakra Petch|Montserrat|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
   <link rel="shortcut icon" href="{% static 'mainpage/images/logo.ico' %}" />
@@ -65,7 +65,7 @@
   </section>
 
   <!-- Home end -->
-<!-- TODO: ¿Podría hacer que cada vez una imagen diferente de las de la web antigua -->
+
   <!-- Navigation start -->
 
   <header class="header">
@@ -105,6 +105,7 @@
 
   <!-- CallToAction start -->
 
+  <!-- TODO: ¿Y un evento onclick que cambie el fondo aleatorio? -->
   <section class="calltoaction"
            style="background: url({% static 'mainpage/images/backgrounds/' %}{{ random_bg }});
                    background-size: cover;
@@ -123,12 +124,28 @@
             <p>UHU, 2004</p>
             <div>
               <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/pqinn/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://gitlab.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".3s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
-                <li><a href="https://git.drupalistas.com/Paco" class="wow fadeInUp" data-wow-delay=".4s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
-                <li><a href="https://sourceforge.net/u/pacoqueen/profile/" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fas fa-code-branch"></i></a></li>
+                <li><div title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/pqinn/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </li>
+                <li><div title="GitHub">
+                    <a href="https://github.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fab fa-github"></i></a>
+                  </div>
+                </li>
+                <li><div title="GitLab">
+                    <a href="https://gitlab.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".3s" target="_blank"><i class="fab fa-gitlab"></i></a>
+                  </div>
+                </li>
+                <li><div title="Private GitLab">
+                    <a href="https://git.drupalistas.com/Paco" class="wow fadeInUp" data-wow-delay=".4s" target="_blank"><i class="fab fa-gitlab"></i></a>
+                  </div>
+                </li>
+                <li><div title="SourceForge">
+                    <a href="https://sourceforge.net/u/pacoqueen/profile/" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fas fa-code-branch"></i></a>
+                  </div>
+                </li>
                 <li>
+                  <div title="Email">
                   <script type="text/javascript" language="javascript">
                   <!--
                   // Email obfuscator script 2.1 by Tim Williams, University of Arizona
@@ -155,18 +172,27 @@
                   </script>
                     <i class="fas fa-envelope"></i>
                   </a></li>
-                <li><a href="https://t.me/paco_queen" class="wow fadeInUp" data-wow-delay=".7s" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                <li><div title="Telegram">
+                    <a href="https://t.me/paco_queen" class="wow fadeInUp" data-wow-delay=".7s" target="_blank"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </li>
               </ul>
               <ul class="social-links">
-                <li><a href="{% static 'mainpage/oldweb/index.html' %}"><i class="fas fa-file-code"></i></a></li>
-                <li><a href="{% static 'mainpage/olderweb/index.html' %}"><i class="far fa-file-code"></i></a></li>
-                <li><a href="https://chaparobo.no-ip.com"><i class="fas fa-server"></i></a></li>
-                <li><a href="http://chaparobo.no-ip.org:8080/projects/"><i class="fas fa-tasks"></i></a></li>
-                <li><a href="http://cebosgoyi.cf"><i class="fas fa-futbol"></i></a></li>
-                <li><a href="https://turboencabulador.gq"><i class="fas fa-gamepad"></i></a></li>
+                <li><div title="My old web"><a href="{% static 'mainpage/oldweb/index.html' %}"><i class="fas fa-file-code"></i></a></div></li>
+                <li><div title="My even older web"><a href="{% static 'mainpage/olderweb/index.html' %}"><i class="far fa-file-code"></i></a></div></li>
+                <li><div title="My private webserver"><a href="https://chaparobo.no-ip.com"><i class="fas fa-server"></i></a></div></li>
+                <li><div title="My bugtracker, Taiga"><a href="http://chaparobo.no-ip.org:8080/projects/"><i class="fas fa-tasks"></i></a></div></li>
+                <li><div title="Cebos Goyi FC, fantasy league"><a href="http://cebosgoyi.cf"><i class="fas fa-futbol"></i></a></li>
+                <li><div title="Turboencabulador, miArcade search tool"><a href="https://turboencabulador.gq"><i class="fas fa-gamepad"></i></a></div></li>
               <ul>
             </div>
-            <p><a href="https://www.gnu.org/philosophy/fsfs/rms-essays.pdf"><em>Free Software, Free Society</em></a></p>
+            <div class="blockquote-wrapper">
+              <div class="blockquote">
+                <h1><a href="https://www.gnu.org/philosophy/fsfs/rms-essays.pdf">Free Software, <span class="quote_red">Free Society</span></a></h1>
+                <!-- <h4>&mdash;Richard M. Stallman</h4> -->
+                <h4>&mdash;rms</h4>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -282,7 +308,7 @@
       </div><!-- .row -->
 
       <div class="row">
-        {% for project in list_projects|dictsortreversed:"pub_date"|slice:":28" %}
+        {% for project in list_projects|dictsortreversed:"pub_date"|slice:":30" %}
           <div class="card col-xs-12 col-sm-5 col-md-5">
               <div class="grid wow zoomIn">
 
@@ -351,7 +377,7 @@
           <h2 class="pfblock-title">Contact</h2>
           <div class="pfblock-line"></div>
           <div class="pfblock-subtitle">
-            Need to contact me?
+            Need to contact me? Use the form below.
           </div>
         </div>
 
@@ -380,8 +406,6 @@
 
           <ul class="social-links">
             <!-- Y paginación en los proyectos. O estrella o mostrar/ocultar en admin -->
-            <!-- Y el curriculum mardkdown-resume y en playcast o como se llame -->
-            <!-- Y enlaces a la web antigua y la más antigua -->
             <li><a href="https://www.linkedin.com/in/pqinn/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="https://gitlab.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".3s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
@@ -417,9 +441,9 @@
             <li><a href="https://t.me/paco_queen" class="wow fadeInUp" data-wow-delay=".7s" target="_blank"><i class="fab fa-telegram"></i></a></li>
           </ul>
 
-          <p class="copyright">Made with <span id="heart">♥</span> in Huelva. <span class="copyleft">&copy;</span> {% now 'Y' %}</p>
+          <p class="copyright">Made with <span id="heart">♥</span> in Huelva, Spain. <span class="copyleft">&copy;</span> {% now 'Y' %}</p>
 
-          <p>Thanks to <a href="https://github.com/vladislavalerievich/Django-personal-website">Vlad Moroshan</a>.</p>
+          <p class="thanks">Thanks to <a href="https://github.com/vladislavalerievich/Django-personal-website">Vlad Moroshan</a> whose project inspired this website and is forked from.</p>
           <p><a href="admin/"><i class="fas fa-user-lock"></i></a></p>
         </div>
 

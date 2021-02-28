@@ -32,7 +32,7 @@ class ProjectListBadgesAndFormView(SuccessMessageMixin, ListView, FormView):
 
     form_class = ContactForm
     success_url = '/' # After submiting the form keep staying on the same url
-    success_message = 'Your Form has been successfully submitted!'
+    success_message = 'Message successfully submitted!'
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
