@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+import os
+import random
 
 from django.views.generic import ListView
 from django.views.generic.edit import FormView
@@ -9,9 +11,19 @@ from django.core.mail import send_mail, get_connection
 from django.conf import settings
 
 from .forms import ContactForm
-from .models import Project
+from .models import Project, Badge
 
-class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
+
+def get_random_background():
+    """Devuelve un nombre de fichero de entre los directorios de fondos
+    para el banner `action`."""
+    static = settings.STATIC_ROOT
+    bgdir = os.path.join(static, "mainpage", "images", "backgrounds")
+    bgs = os.listdir(bgdir)
+    res = random.choice(bgs)
+    return res
+
+class ProjectListBadgesAndFormView(SuccessMessageMixin, ListView, FormView):
     model = Project # data from database
     template_name = 'mainpage/main.html'
     context_object_name = 'list_projects' # name of the var in html template
@@ -30,7 +42,15 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
             cd['name'],
             cd['message'],
             cd.get('email', 'noreply@example.com'),
-            ['vlad.moroshan@gmail.com'],
+            ['bogado@qinn.es'],
             fail_silently=False
         )
-        return super(ProjectListAndFormView, self).form_valid(form)
+        return super(ProjectListBadgesAndFormView, self).form_valid(form)
+
+    def get_context_data(self, **kwargs):
+        context = super(ProjectListBadgesAndFormView, self).get_context_data(**kwargs)
+        context.update({
+            'badges': Badge.objects.order_by("order"),
+            'random_bg': get_random_background(),
+        })
+        return context

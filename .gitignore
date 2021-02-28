@@ -1,3 +1,5 @@
-# created by virtualenv automatically
-*
+my_secrets/
 db.sqlite3
+bin/
+lib/
+*.pyc

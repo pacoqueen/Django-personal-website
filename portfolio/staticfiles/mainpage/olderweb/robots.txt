@@ -1,0 +1,28 @@
+# robotstxt.org/
+
+User-agent: *
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: Teleport Pro
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: eCatch
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+# Me ha consumido 2 gigas de ancho de banda en apenas una semana.
+# 66.249.72.236 - - [12/Jun/2011:21:03:47 +0200] "GET /modx/index.php?id=2&reflect_117_month=10&reflect_117_year=2008&reflect_117_day=false&reflect_117_start=0&reflect_431_month=10&reflect_431_year=2008&reflect_431_day=false&reflect_431_start=0&reflect_625_month=10&reflect_625_year=2008&reflect_625_day=false&reflect_625_start=0&reflect_101_month=10&reflect_101_year=2008&reflect_101_day=false&reflect_101_start=0&reflect_1_month=10&reflect_1_year=2008&reflect_1_day=false&reflect_1_start=0&reflect_242_month=10&reflect_242_year=2008&reflect_242_day=false&reflect_242_start=0&reflect_261_month=10&reflect_261_year=2008&reflect_261_day=false&reflect_261_start=0&reflect_721_month=10&reflect_721_year=2008&reflect_721_day=false&reflect_721_start=0&reflect_530_month=5&reflect_530_year=2008&reflect_530_day=false&reflect_530_start=0&reflect_818_month=10&reflect_818_year=2008&reflect_818_day=false&reflect_818_start=0&reflect_555_month=5&reflect_555_year=2008&reflect_555_day=false&reflect_555_start=0&start=8&reflect_967_month=5&reflect_967_year=2008&reflect_967_day=false&reflect_967_start=0&reflect_125_month=10&reflect_125_year=2008&reflect_125_day=false&reflect_125_start=0&reflect_822_month=10&reflect_822_year=2008&reflect_822_day=false&reflect_822_start=0&reflect_543_month=10&reflect_543_year=2008&reflect_543_day=false&reflect_543_start=0&reflect_943_month=10&reflect_943_year=2008&reflect_943_day=false&reflect_943_start=0&reflect_129_month=10&reflect_129_year=2008&reflect_129_day=false&reflect_129_start=0&reflect_814_month=5&reflect_814_year=2008&reflect_814_day=false&reflect_814_start=0&reflect_255_month=10&reflect_255_year=2008&reflect_255_day=false&reflect_255_start=0&reflect_669_month=5&reflect_669_year=2008&reflect_669_day=false&reflect_669_start=0&reflect_385_month=5&reflect_385_year=2008&reflect_385_day=false&reflect_385_start=0 HTTP/1.1" 500 7309 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+# Se le ha ido la pinza con la recursividad en algún módulo de modx.
+User-agent: Googlebot
+Disallow: /modx/index.php?
+Disallow: /index.php?

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from my_secrets import secrets
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,10 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'o0hquVziZiEq2HScNXmPCKKu4XwX+k151fHN/Y36gIYDhoLD8R'
+SECRET_KEY = secrets.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# DEBUG = True
 
 ALLOWED_HOSTS =  ['*']
 
@@ -107,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
@@ -128,7 +130,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 # For sending emails
 EMAIL_USE_TLS = True
-EMAIL_HOST ='smtp.gmail.com'
-EMAIL_HOST_USER = 'your_email@gmail.com'
-EMAIL_HOST_PASSWORD = '*********'
+EMAIL_HOST = secrets.EMAIL_HOST
+EMAIL_HOST_USER = secrets.EMAIL_USER
+EMAIL_HOST_PASSWORD = secrets.EMAIL_PASSWORD
 EMAIL_PORT = 587

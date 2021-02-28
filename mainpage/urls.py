@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from .views import ProjectListAndFormView
+from .views import ProjectListBadgesAndFormView
 
 urlpatterns = [
-    url(r'^$', ProjectListAndFormView.as_view(), name='main')
+    url(r'^$', ProjectListBadgesAndFormView.as_view(), name='main')
 ]

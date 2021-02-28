@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Francisco José Rodríguez Bogado -- <admin@qinn.es>
+
+# THANKS
+
+    HTML5 Boilerplate
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

@@ -3,304 +3,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal webpage">
+  <meta name="author" content="Francisco José Rodríguez Bogado">
 
-		gtag('config', 'UA-109064262-1');
-	</script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNSQKRC');</script>
+  <!-- End Google Tag Manager -->
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio webpage">
-	<meta name="author" content="Vladislav Moroshan">
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Chakra Petch|Montserrat|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="shortcut icon" href="{% static 'mainpage/images/logo.ico' %}" />
+  <title>Q-INN</title>
 
-	<link rel="shortcut icon" href="{% static 'mainpage/images/logo.ico' %}" />
-	<title>Web Developer</title>
+  <!-- CSS -->
+  <link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+  <link href="{% static 'mainpage/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+  <link href="{% static 'mainpage/css/animate.css" rel="stylesheet' %}">
 
-	<!-- CSS -->
-	<link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'mainpage/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
-	<link href="{% static 'mainpage/css/animate.css" rel="stylesheet' %}">
+  <!-- Custom styles CSS -->
+  <link href="{% static 'mainpage/css/style.css' %}" rel="stylesheet" media="screen">
 
-	<!-- Custom styles CSS -->
-	<link href="{% static 'mainpage/css/style.css' %}" rel="stylesheet" media="screen">
-
-    <script src="{% static 'mainpage/js/modernizr.custom.js' %}"></script>
+  <script src="{% static 'mainpage/js/modernizr.custom.js' %}"></script>
 
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNSQKRC"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-	<!-- Preloader -->
+  <!-- Preloader -->
 
-	<div id="preloader">
-		<div id="status"></div>
-	</div>
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
 
-	<!-- Home start -->
+  <!-- Home start -->
 
-	<section id="home" class="pfblock-image screen-height">
+  <section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
-		<div class="intro">
-			<div class="start">Hello, my name is Vlad Moroshan and I am</div>
-			<h1>Full-Stack Web Developer</h1>
-			<div class="start">creating modern and responsive Web Application</div>
-		</div>
+    <div class="intro">
+      <div class="start">Developer</div>
+      <h1>Francisco José Rodríguez Bogado</h1>
+      <div class="start">Free (Libre) Software</div>
+    </div>
 
-		<a href="#services">
-			<div class="scroll-down">
-				<span>
-					<i class="fa fa-angle-down fa-2x"></i>
-				</span>
-			</div>
-		</a>
-	</section>
+    <a href="#services">
+      <div class="scroll-down">
+        <span>
+          <i class="fa fa-angle-down fa-2x"></i>
+        </span>
+      </div>
+    </a>
+  </section>
 
-	<!-- Home end -->
+  <!-- Home end -->
+<!-- TODO: ¿Podría hacer que cada vez una imagen diferente de las de la web antigua -->
+  <!-- Navigation start -->
 
-	<!-- Navigation start -->
+  <header class="header">
 
-	<header class="header">
+    <nav class="navbar navbar-custom" role="navigation">
 
-		<nav class="navbar navbar-custom" role="navigation">
+      <div class="container">
 
-			<div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Q inn</a>
+        </div>
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Vlad Moroshan</a>
-				</div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">About</a></li>
+            <li><a href="#portfolio">Stuff</a></li>
+            <li><a href="#badges">Badges</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
 
-				<div class="collapse navbar-collapse" id="custom-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#services">About me</a></li>
-            <li><a href="#portfolio">Works</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+      </div><!-- .container -->
 
-			</div><!-- .container -->
+    </nav>
 
-		</nav>
+  </header>
 
-	</header>
+  <!-- Navigation end -->
 
-	<!-- Navigation end -->
+
+  <!-- CallToAction start -->
+
+  <section class="calltoaction"
+           style="background: url({% static 'mainpage/images/backgrounds/' %}{{ random_bg }});
+                   background-size: cover;
+                   background-position: bottom;
+                   height: 480px;
+                   opacity: 75%;
+                   align-content: center;
+                   display: grid;">
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-md-12 col-lg-12">
+          <h2 class="wow slideInRight" data-wow-delay=".1s">Computer Science Technical Engineer</h2>
+          <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+            <p>UHU, 2004</p>
+            <div>
+              <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/pqinn/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://gitlab.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".3s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+                <li><a href="https://git.drupalistas.com/Paco" class="wow fadeInUp" data-wow-delay=".4s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+                <li><a href="https://sourceforge.net/u/pacoqueen/profile/" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fas fa-code-branch"></i></a></li>
+                <li>
+                  <script type="text/javascript" language="javascript">
+                  <!--
+                  // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                  // Random encryption key feature coded by Andrew Moulden
+                  // This code is freeware provided these four comment lines remain intact
+                  // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+                  { coded = "zn4WKn@wcbb.mt"
+                    key = "kSToV4pcaDHQPv3srnxZA2WUe6G7dtqbhJOC0fmBNyKMwzuEFLRl8g5iXIY91j"
+                    shift=coded.length
+                    link=""
+                    for (i=0; i<coded.length; i++) {
+                      if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                      }
+                      else {
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                      }
+                    }
+                  document.write('<a href="mailto:'+link+'" class="wow fadeInUp" data-wow-delay=".6s">')
+                  }
+                  //-->
+                  </script>
+                    <i class="fas fa-envelope"></i>
+                  </a></li>
+                <li><a href="https://t.me/paco_queen" class="wow fadeInUp" data-wow-delay=".7s" target="_blank"><i class="fab fa-telegram"></i></a></li>
+              </ul>
+              <ul class="social-links">
+                <li><a href="{% static 'mainpage/oldweb/index.html' %}"><i class="fas fa-file-code"></i></a></li>
+                <li><a href="{% static 'mainpage/olderweb/index.html' %}"><i class="far fa-file-code"></i></a></li>
+                <li><a href="https://chaparobo.no-ip.com"><i class="fas fa-server"></i></a></li>
+                <li><a href="http://chaparobo.no-ip.org:8080/projects/"><i class="fas fa-tasks"></i></a></li>
+                <li><a href="http://cebosgoyi.cf"><i class="fas fa-futbol"></i></a></li>
+                <li><a href="https://turboencabulador.gq"><i class="fas fa-gamepad"></i></a></li>
+              <ul>
+            </div>
+            <p><a href="https://www.gnu.org/philosophy/fsfs/rms-essays.pdf"><em>Free Software, Free Society</em></a></p>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+          <a href="#contact" class="btn btn-lg">Contact</a>
+        </div>
+
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </section>
+
+  <!-- CallToAction end -->
 
 
   <!-- Services start -->
 
-	<section id="services" class="pfblock pfblock-gray">
-		<div class="container">
-			<div class="row">
+  <section id="services" class="pfblock pfblock-gray">
+    <div class="container">
+      <div class="row">
+            <h2 class="pfblock-title">About</h2>
+            <div class="pfblock-line"></div>
 
-				<div class="col-sm-8">
+        <div class="col-sm-4">
+          <div class="pfblock-header wow fadeInUp">
+            <img id="myphoto" src="{% static 'mainpage/images/me.png' %}" alt="Paco" style="border-radius: 100%;filter:grayscale(30%);">
+          </div>
+        </div>
 
-					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">ABOUT ME</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-							<p>I enjoy building everything from small business sites and landing pages to portfolio themes and rich interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance to communicate without annoying.</p>
-							<p>Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.</p>
-							<p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
+        <div class="col-sm-8">
+          <div class="pfblock-header wow fadeInUp">
+            <div class="pfblock-subtitle">
+              <ol>
+                <li>1986: MS-DOS (Intel 8088)</li>
+                <li>1990: DR-DOS (Intel i386)</li>
+                <li>1993: Windows 3.11 (Intel i486-SX)</li>
+                <li>1995: Windows 95, 98SE, XP (Intel Pentium)</li>
+                <li>2000: GNU/Linux Esware (AMD K6-2)</li>
+                <li>2002: Debian Woody (Intel Pentium 4)</li>
+                <li>2003: <em>Python</em></li>
+              </ol>
+              <a href="{% static 'mainpage/oldweb/asciinema.html' %}" target="_blank" id="resume-effect"><i class="fas fa-3x fa-terminal" aria-hidden="true"></i> Curriculum Vitae.</a>
+            </div>
+          </div>
+        </div>
 
- 							<a href="https://drive.google.com/file/d/0B4mqctkjXG0iclRXd2JJMGtYZFE/view?usp=sharing" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a>
-						</div>
-					</div>
-				</div>
+    </div><!-- .container -->
 
-				<div class="col-sm-4">
-					<div class="pfblock-header wow fadeInUp">
-						<img id="myphoto" src="{% static 'mainpage/images/me.jpg' %}" alt="Vladislav Moroshan" style="border-radius: 100%;filter:grayscale(30%);">
-					</div>
-				</div>
-		</div><!-- .container -->
+    <div class="skills col-xs-12">
+        <h2 class="pfblock-title">Skills</h2>
+        <div class="pfblock-line"></div>
 
-		<div class="skills col-xs-12">
-				<h2 class="pfblock-title">MY SKILLS</h2>
-				<div class="pfblock-line"></div>
+        <div class="row">
+          <div  class="devicon-linux-plain col-xs-15"><span>GNU/Linux</span></div>
+          <div  class="devicon-debian-plain col-xs-15"><span>Debian</span></div>
+          <div  class="devicon-ubuntu-plain col-xs-15"><span>Ubuntu</span></div>
+          <div  class="devicon-vim-plain col-xs-15"><span>Vim</span></div>
+          <div  class="devicon-bash-plain col-xs-15"><span>sh</span></div>
+          <div  class="devicon-git-plain col-xs-15"><span>Git</span></div>
 
-				<div class="row">
-					<div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
-					<div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
-					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
-					<div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
-					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
-				</div>
-				<div class="row">
-					<div  class="devicon-d3js-plain  col-xs-15"><span>D3</span></div>
-					<div  class="devicon-react-original  col-xs-15"><span>REACT</span></div>
-					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODE</span></div>
-					<div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
-					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
-				</div>
+          <div  class="devicon-python-plain col-xs-15"><span>Python</span></div>
+          <div  class="devicon-django-plain col-xs-15"><span>Django</span></div>
+          <div  class="devicon-flask-plain col-xs-15"><span>Flask</span></div>
 
-			</div>
-		</div>
-	</section>
+          <div  class="devicon-postgresql-plain col-xs-15"><span>PostgreSQL</span></div>
+        </div>
 
-	<!-- Services end -->
+        <div class="row">
+          <div  class="devicon-mysql-plain col-xs-15"><span>MySQL</span></div>
 
+          <div  class="devicon-c-plain col-xs-15"><span>C</span></div>
+          <div  class="devicon-cplusplus-plain col-xs-15"><span>C++</span></div>
 
-	<!-- Portfolio start -->
+          <div  class="devicon-php-plain col-xs-15"><span>PHP</span></div>
+          <div  class="devicon-wordpress-plain col-xs-15"><span>WordPress</span></div>
+          <div  class="devicon-woocommerce-plain col-xs-15"><span>Woocommerce</span></div>
 
-	<section id="portfolio" class="pfblock">
-		<div class="container">
-			<div class="row">
+          <div  class="devicon-html5-plain col-xs-15"><span>HTML5</span></div>
+          <div  class="devicon-css3-plain col-xs-15"><span>CSS</span></div>
+          <div  class="devicon-javascript-plain col-xs-15"><span>Javascript</span></div>
+          <div  class="devicon-nodejs-plain col-xs-15"><span>NodeJS</span></div>
+        </div>
 
-				<div class="col-sm-6 col-sm-offset-3">
+        <div class="row" style="display:flex">
+          <div  class="devicon col-xs-15"><img id="arduino_logo" src="{% static 'mainpage/images/arduino.svg' %}" alt="Arduino logo" style="height:80px"><span>Arduino</span></div>
+          <div  class="devicon col-xs-15"><img id="raspberry_logo" src="{% static 'mainpage/images/raspberry.png' %}" alt="Raspberry Pi logo" style="height:80px"><span>Raspberry Pi</span></div>
+        </div>
 
-					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">My works</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
+      </div>
+    </div>
+  </section>
 
-						</div>
-					</div>
-
-				</div>
-
-			</div><!-- .row -->
-
-			<div class="row">
-				{% for project in list_projects|slice:":2" %}
-					<div class="card col-xs-12 col-sm-5 col-md-5">
-							<div class="grid wow zoomIn">
-
-								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
-									{% with 'mainpage/images/'|add:project.img_name as image_static %}
-											<img class="card-img-top" src="{% static image_static %}"></a>
-									{% endwith %}
-								</figure>
-
-								<div class="card-block">
-									<h2 class="card-title">{{ project.title }}</h2>
-									<p class="card-text">{{ project.description }}</p>
-									<div class="tools">
-										{% for tool in project.tools.split %}
-											<span>{{ tool }}</span>
-										{% endfor %}
-									</div>
-								</div>
-
-							</div>
-						</div>
-					{% endfor %}
-				</div>
-		</div><!-- .contaier -->
-
-	</section>
-
-	<!-- Portfolio end -->
+  <!-- Services end -->
 
 
-	<!-- CallToAction start -->
+  <!-- Portfolio start -->
 
-	<section class="calltoaction">
-		<div class="container-fluid">
+  <section id="portfolio" class="pfblock">
+    <div class="container">
+      <div class="row">
 
-			<div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
 
-				<div class="col-md-12 col-lg-12">
-					<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
-					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-						I'm available for freelance contracts, so get in touch:
-					</div>
-				</div>
+          <div class="pfblock-header wow fadeInUp">
+            <h2 class="pfblock-title">Stuff</h2>
+            <div class="pfblock-line"></div>
+            <div class="pfblock-subtitle">
 
-				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-					<a href="#contact" class="btn btn-lg">Hire Me</a>
-				</div>
+            </div>
+          </div>
 
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</section>
+        </div>
 
-	<!-- CallToAction end -->
+      </div><!-- .row -->
 
+      <div class="row">
+        {% for project in list_projects|dictsortreversed:"pub_date"|slice:":28" %}
+          <div class="card col-xs-12 col-sm-5 col-md-5">
+              <div class="grid wow zoomIn">
 
-	<!-- Contact start -->
+                <figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
+                  {% with 'mainpage/images/'|add:project.img_name as image_static %}
+                      <img class="card-img-top" src="{% static image_static %}"></a>
+                  {% endwith %}
+                </figure>
 
-	<section id="contact" class="pfblock">
-		<div class="row">
+                <div class="card-block">
+                  <h2 class="card-title">{{ project.title }}</h2>
+                  <h3 class="card-year">{{ project.pub_date.year }}</h3>
+                  <p class="card-text">{{ project.description }}</p>
+                  <div class="tools">
+                    {% for tool in project.tools.split %}
+                      <span>{{ tool }}</span>
+                    {% endfor %}
+                  </div>
+                </div>
 
-			<div class="col-sm-6 col-sm-offset-3">
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+    </div><!-- .contaier -->
 
-				<div class="pfblock-header">
-					<h2 class="pfblock-title">Contact</h2>
-					<div class="pfblock-line"></div>
-					<div class="pfblock-subtitle">
-						I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it. After you introduce yourself and your project, I'll get it touch with you to schedule a time to chat.
-					</div>
-				</div>
+  </section>
 
-			</div>
-
-		</div><!-- .row -->
-
-		<div class="row">
-
-			<div class="col-sm-6 col-sm-offset-3">
-				{% include 'mainpage/contact_form.html' %}
-			</div><!-- .row -->
-
-		</div><!-- .container -->
-	</section>
-
-	<!-- Contact end -->
-
-	<!-- Footer start -->
-
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-12">
-
-					<ul class="social-links">
-						<li><a href="https://www.linkedin.com/in/vlad-moroshan-266229129?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/VladislavMoroshan" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="mailto:vlad.moroshan@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
-						<li><a href="skype:moroshan777?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li>
-					</ul>
-
-					<p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
-
-					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> Ukraine 2017 ©</p>
-
-				</div>
-
-			</div><!-- .row -->
-		</div><!-- .container -->
-	</footer>
-
-	<!-- Footer end -->
+  <!-- Portfolio end -->
 
 
-	<!-- Javascript files -->
+  <!-- Badges start  -->
+  <section id="badges" class="pfblock pfblock-gray">
+    <div class="container">
+      <div class="skills col-xs-12">
+        <h2 class="pfblock-title">Badges</h2>
+        <div class="pfblock-line"></div>
 
-	<script src="{% static 'mainpage/js/jquery-1.11.1.min.js' %}"></script>
-	<script src="{% static 'mainpage/bootstrap/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'mainpage/js/jquery.parallax-1.1.3.js' %}"></script>
-	<script src="{% static 'mainpage/js/imagesloaded.pkgd.js' %}"></script>
-	<script src="{% static 'mainpage/js/jquery.sticky.js' %}"></script>
-	<script src="{% static 'mainpage/js/smoothscroll.js' %}"></script>
-	<script src="{% static 'mainpage/js/wow.min.js' %}"></script>
+        <div class="row" style="display:flex">
+          {% load badges_filters %}
+          {% for badge in badges|subset:0 %}
+            <div class="devicon col-xs-15"><a href={{ badge.link }}><img src="{% static 'mainpage/images/badges' %}/{{ badge.img|basename }}" alt="{{ badge.description }}" width=80px height=80px> <span>{{ badge.name }}</span></a></div>
+          {% endfor %}
+
+        </div>
+
+        <div class="row">
+          {% for badge in badges|subset:1 %}
+            <div class="devicon col-xs-15"><a href={{ badge.link }}><img src="{% static 'mainpage/images/badges' %}/{{ badge.img|basename }}" alt="{{ badge.description }}" width=80px height=80px> <span>{{ badge.name }}</span></a></div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Badges end    -->
+
+  <!-- Contact start -->
+
+  <section id="contact" class="pfblock">
+    <div class="row">
+
+      <div class="col-sm-6 col-sm-offset-3">
+
+        <div class="pfblock-header">
+          <h2 class="pfblock-title">Contact</h2>
+          <div class="pfblock-line"></div>
+          <div class="pfblock-subtitle">
+            Need to contact me?
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- .row -->
+
+    <div class="row">
+
+      <div class="col-sm-6 col-sm-offset-3">
+        {% include 'mainpage/contact_form.html' %}
+      </div><!-- .row -->
+
+    </div><!-- .container -->
+  </section>
+
+  <!-- Contact end -->
+
+  <!-- Footer start -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+
+          <ul class="social-links">
+            <!-- Y paginación en los proyectos. O estrella o mostrar/ocultar en admin -->
+            <!-- Y el curriculum mardkdown-resume y en playcast o como se llame -->
+            <!-- Y enlaces a la web antigua y la más antigua -->
+            <li><a href="https://www.linkedin.com/in/pqinn/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://gitlab.com/pacoqueen" class="wow fadeInUp" data-wow-delay=".3s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+            <li><a href="https://git.drupalistas.com/Paco" class="wow fadeInUp" data-wow-delay=".4s" target="_blank"><i class="fab fa-gitlab"></i></a></li>
+            <li><a href="https://sourceforge.net/u/pacoqueen/profile/" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fas fa-code-branch"></i></a></li>
+            <li>
+              <script type="text/javascript" language="javascript">
+              <!--
+              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+              // Random encryption key feature coded by Andrew Moulden
+              // This code is freeware provided these four comment lines remain intact
+              // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+              { coded = "zn4WKn@wcbb.mt"
+                key = "kSToV4pcaDHQPv3srnxZA2WUe6G7dtqbhJOC0fmBNyKMwzuEFLRl8g5iXIY91j"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                  if (key.indexOf(coded.charAt(i))==-1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                  }
+                  else {
+                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                    link += (key.charAt(ltr))
+                  }
+                }
+              document.write('<a href="mailto:'+link+'" class="wow fadeInUp" data-wow-delay=".6s">')
+              }
+              //-->
+              </script>
+                <i class="fas fa-envelope"></i>
+              </a></li>
+            <li><a href="https://t.me/paco_queen" class="wow fadeInUp" data-wow-delay=".7s" target="_blank"><i class="fab fa-telegram"></i></a></li>
+          </ul>
+
+          <p class="copyright">Made with <span id="heart">♥</span> in Huelva. <span class="copyleft">&copy;</span> {% now 'Y' %}</p>
+
+          <p>Thanks to <a href="https://github.com/vladislavalerievich/Django-personal-website">Vlad Moroshan</a>.</p>
+          <p><a href="admin/"><i class="fas fa-user-lock"></i></a></p>
+        </div>
+
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </footer>
+
+  <!-- Footer end -->
+
+
+  <!-- Javascript files -->
+
+  <script src="{% static 'mainpage/js/jquery-1.11.1.min.js' %}"></script>
+  <script src="{% static 'mainpage/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'mainpage/js/jquery.parallax-1.1.3.js' %}"></script>
+  <script src="{% static 'mainpage/js/imagesloaded.pkgd.js' %}"></script>
+  <script src="{% static 'mainpage/js/jquery.sticky.js' %}"></script>
+  <script src="{% static 'mainpage/js/smoothscroll.js' %}"></script>
+  <script src="{% static 'mainpage/js/wow.min.js' %}"></script>
   <script src="{% static 'mainpage/js/waypoints.min.js' %}"></script>
   <script src="{% static 'mainpage/js/jquery.cbpQTRotator.js' %}"></script>
-	<script src="{% static 'mainpage/js/custom.js' %}"></script>
+  <script src="{% static 'mainpage/js/custom.js' %}"></script>
 
 </body>
 </html>
