@@ -1,5 +1,6 @@
 my_secrets/
 db.sqlite3
+datadump.json
 bin/
 lib/
 *.pyc
