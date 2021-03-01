@@ -754,7 +754,7 @@ div[class^="devicon"] span{
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 1px 1%;
+  margin: 1px 1% 15px 1%;
   min-width: 100%;
   max-width: 100%;
   height: auto;
