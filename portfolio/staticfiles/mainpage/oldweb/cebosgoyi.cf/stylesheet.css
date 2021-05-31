@@ -99,14 +99,17 @@ dl {
 
 .oro {
   color: gold;
+  text-shadow: #000 0px 0px 3px;
 }
 
 .plata {
   color: silver;
+  text-shadow: #000 0px 0px 3px;
 }
 
 .bronce {
   color: #cd7f32;
+  text-shadow: #000 0px 0px 3px;
 }
 
 header {
