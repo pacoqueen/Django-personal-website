@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CV de Francisco José Rodríguez Bogado</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
+        <style type="text/css">
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+        @charset "utf-8";
+        @-webkit-viewport   { width: device-width; }
+        @-moz-viewport      { width: device-width; }
+        @-ms-viewport       { width: device-width; }
+        @-o-viewport        { width: device-width; }
+        @viewport           { width: device-width; }
+        
+        body{
+          font-family: 'Open Sans', Arial, Tahoma;
+          font-weight: 400;
+          color: #363636;
+          background: #334960;
+        }
+        blockquote {
+          font-size: 1em;
+        }
+        
+        .container{
+          margin-top: 80px;
+          margin-bottom: 15px;
+          background: #fff;
+        }
+        
+        #photo-header{
+          margin-top: -75px;
+        }
+        #photo{
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          overflow: hidden;
+          padding: 5px;
+          background: #334960;
+          display: inline-block;
+        }
+        #photo img{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+        #text-header h1{
+          margin: 0;
+          padding: 0;
+          font-size: 1.5em;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: -1px;
+        }
+        #text-header h1::first-line{
+          font-size: 1.5em;
+          font-weight: 800;
+          line-height: 1.5em;
+        }
+        #text-header h1 span{
+          color: #334960;
+          opacity: 0.7;
+        }
+        #text-header h1 sup{
+          opacity: 0.5;
+        }
+        #text-header:after{
+          width: 100%;
+          height: 3px;
+          border-bottom: 1px solid #ddd;
+          margin-top: 15px;
+          content: '';
+          display: block;
+        }
+        
+        .box{
+          padding-bottom: 10px;
+          margin-bottom: 25px;
+        }
+        .box h2{
+          color: #227c74;
+          font-size: 1.5em;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        
+        #awards,
+        #education{
+          margin-top: 20px;
+          margin-bottom: 0;
+          position: relative;
+          padding: 1em 0;
+          list-style: none;
+        }
+        #awards:before,
+        #education:before {
+          width: 5px;
+          height: 100%;
+          position: absolute;
+          left: 35px;
+          top: 0;
+          content: ' ';
+          display: block;
+          background: #32475c;
+          background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+          background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+          background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+          background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+          background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+        }
+        #awards li,
+        #education li{
+          width: 100%;
+          z-index: 2;
+          position: relative;
+          float: left;
+        }
+        #awards .year,
+        #education .year{
+          width: 14%;
+          background: #fff;
+          padding: 10px;
+          font-weight: 700;
+          display: inline-block;
+        }
+        #awards .description,
+        #education .description{
+          width: 83%;
+          display: inline-block;
+          background: #eee;
+          margin-bottom: 10px;
+          position: relative;
+          padding: 10px;
+          border-bottom: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+        #awards .description:after,
+        #education .description:after {
+          content: '';
+          position: absolute;
+          top: 15px;
+          right: 0;
+          left: -16px;
+          height: 0;
+          width: 0;
+          border: solid transparent;
+          border-right-color: #eee;
+          border-width: 8px;
+          pointer-events: none;
+        }
+        #awards .description h3,
+        #education .description h3{
+          font-size: 1.2em;
+          margin: 0;
+          padding: 0;
+          font-weight: 700;
+        }
+        #awards .description p,
+        #education .description p{
+          margin-top: 5px;
+          padding: 0;
+        }
+        
+        .job{
+          margin-bottom: 15px;
+        }
+        .job .details {
+          margin-left: 3%;
+          width: 95%;
+          padding: 10px;
+          margin-bottom: 10px;
+          background: #eee;
+          border-bottom: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+        .job .where{
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+        .job .year{
+          opacity: 0.7;
+        }
+        .job .profession{
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+        .job .description{
+          line-height: 1.5em;
+        }
+        .job .highlights{
+          padding: 5px 0;
+          font-weight: bold;
+        }
+        .job .job-details {
+          padding-left: 5%;
+          width: 100%;
+        }
+        .publication {
+          margin-bottom: 0;
+        }
+        .publication .name{
+          font-size: 1em;
+          font-weight: bold;
+        }
+        .publication .year{
+            opacity: 0.7;
+        }
+        .publication p{
+          margin: 0;
+          padding-top: 10px;
+        }
+        
+        .contact-item{
+          width: 100%;
+          float: left;
+        }
+        .contact-item .icon{
+          padding: 10px;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          color: #32475c;
+          background: #eee;
+        }
+        .contact-item:last-child .icon{
+          border-bottom: none;
+        }
+        .contact-item .title{
+          width: 80%;
+          width: calc(100% - 55px);
+          font-weight: 700;
+          opacity: 0.9;
+        }
+        .contact-item .title.only{
+          margin-top: 10px;
+        }
+        .contact-item .description{
+          width: 80%;
+          width: calc(100% - 55px);
+          color: #334960;
+        }
+        
+        .item-interests,
+        .item-skills{
+          height: 30px;
+          color: #334960;
+          padding: 5px 10px;
+          margin-bottom: 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 1.1em;
+          font-weight: 600;
+        }
+        .interest,
+        .skill{
+          color: #fff;
+          display: inline-block;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          padding: 5px 10px;
+          background: #32475c;
+          position: relative;
+          font-size: .85em;
+        }
+        .skill-level {
+          background-color: #227c74;
+          border-radius: 4px;
+          color: #fff;
+          padding: 1px 8px;
+          font-size: .75em;
+          position: absolute;
+          margin: 1px 10px;
+        }
+        
+        #language-skills .skill{
+          margin: 10px 0;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #eee;
+        }
+        </style>
+        <!-- <style type="text/css" media="print"> -->
+        <style type="text/css" media="speech">
+            body {
+          font-size: .95em;
+          -webkit-print-color-adjust: exact;
+        }
+        
+        a[href]:after {
+          content: none !important;
+        }
+        
+        #photo{
+          display: none;
+        }
+        
+        .box {
+          margin-bottom: -10px;
+        }
+        
+        blockquote,
+        #education,
+        #awards,
+        .contact-item,
+        .publication,
+        .skills,
+        .interests,
+        .job-details,
+        .job {
+          page-break-inside: avoid;
+        }
+        
+        .col-sm-5{
+          width: 40%;
+          padding: 0 15px;
+        }
+        
+        .col-sm-7{
+          width: 60%;
+          padding: 0 15px;
+        }
+        
+        .skills .col-sm-offset-1,
+        .interests .col-sm-offset-1{
+          margin-top: -10px;
+          margin-bottom: 5px;
+        }
+        
+        #education {
+          margin: 0;
+          margin-bottom: -20px;
+        }
+        #awards:before,
+        #education:before {
+          background: none;
+        }
+        
+        #awards .description,
+        #education .description,
+        .job .details {
+          border: 1px solid #eee;
+        }
+        .publication,
+        .publication .panel-heading,
+        .publication .name{
+          margin: 0;
+          padding: 0 5px;
+          border: none;
+        }
+        .publication .panel-body {
+          padding: 0 10px;
+          margin: 0;
+        }
+        
+        .badge {
+          margin: 0;
+        }
+        
+        .list-group-item{
+          border: none;
+          margin: 0;
+          padding: 5px 15px;
+        }
+        .list-group-item:after{
+          content: '';
+          position: absolute;
+          top: 8px;
+          right: 0;
+          left: -1px;
+          height: 0;
+          width: 0;
+          border: solid transparent;
+          border-right-color: #999;
+          border-width: 4px;
+          pointer-events: none;
+         }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container" style="width: 94%">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="photo-header" class="text-center">
+                        <!-- PHOTO (AVATAR) -->
+                        <div id="photo">
+                            <img src="https:&#x2F;&#x2F;media-exp1.licdn.com&#x2F;dms&#x2F;image&#x2F;C5603AQHyiScL5egn6Q&#x2F;profile-displayphoto-shrink_200_200&#x2F;0&#x2F;1589953945749?e&#x3D;1651104000&amp;v&#x3D;beta&amp;t&#x3D;BuVQ5pJ58uhKSqmZ5cHDy8njpgQk6J2Rn3FwS3mUOTU"
+                            alt="avatar">
+                        </div>
+                        <div id="text-header">
+                             <h1>Francisco José Rodríguez Bogado<br></h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-7" style="width: 45%;">
+                    <!-- ABOUT ME -->
+                    <div class="box">
+                         <h2><i class="fa fa-user ico"></i> Sobre mí</h2>
+
+                        <p>Programador especializado en Software Libre. Más de 20 años de experiencia
+                            en GNU/Linux.</p>
+                        <p><strong><em>Stack:</em> Debian + Vim + Python + GTK</strong>
+                        </p>
+                        <p>Desarrollo de aplicaciones de escritorio, web, <em>scripting</em>, monitorización
+                            y administración de sistemas y bases de datos.</p>
+                    </div>
+                    <!-- WORK EXPERIENCE -->
+                    <div class="box">
+                         <h2><i class= "fa fa-suitcase ico"></i> Experiencia Laboral</h2>
+
+                        <div class="job clearfix">
+                            <div class="row">
+                                <div class="details">
+                                    <div class="where">GEOTEXAN S.A.</div>
+                                    <div class="address"> <a href="http:&#x2F;&#x2F;www.geotexan.com" target="_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;www.geotexan.com</a>
+
+                                    </div>
+                                    <div class="year">Abril 2012 – Ahora</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="job-details col-xs-11">
+                                    <div class="profession">Jefe de Informática</div>
+                                    <div class="description">Desarrollo de ERP a medida, CIO &amp; CTO, implantación de software de
+                                        terceros, soporte microinformática, administración de sistemas MS-Windows
+                                        y GNU/Linux, diseño e implementación de redes, soporte telefonía, RGPD,
+                                        informática industrial y equipos de laboratorio (Siemens, Instron, Textechno,
+                                        Helfis, Lenzing), ciberseguridad y análisis forense digital.
+                                        <!-- <div class="highlights">Logros</div> -->
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Director de implantación SAP (<em>Product Owner</em>). [Seidor SAP, Boyum
+                                                BEAS, Taiga, EKCIT, Cloud DataRush]</li>
+                                            <li class="list-group-item">Soporte Sage Murano. Desarrollo de integraciones con sistemas propios.
+                                                [Python, SQL]</li>
+                                            <li class="list-group-item">Desarrollo de (recomendador web de geotextiles según cálculos de ingeniería
+                                                civil)[<a href="https://geotexan.github.io/calculinn/">https://geotexan.github.io/calculinn/</a>].
+                                                [Brython, Python, JavaScript, HTML5, CSS3]</li>
+                                            <li class="list-group-item">Administración de sistemas MS-Windows 2008R2-2019 y GNU/Linux Debian.
+                                                [PowerShell, Bash, Netdata, OCS, GLPI, Shorewall]</li>
+                                            <li class="list-group-item">Administración de SGBD PostgreSQL, MariaDB/MySQL y MS-SQLServer 2008R2.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="row">
+                                <div class="details">
+                                    <div class="where">Novaweb Área Virtual, S. L.</div>
+                                    <div class="address"> <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;novaweb-area-virtual-s-l&#x2F;about&#x2F;"
+                                        target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;novaweb-area-virtual-s-l&#x2F;about&#x2F;</a>
+
+                                    </div>
+                                    <div class="year">Noviembre 2008 – Abril 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="job-details col-xs-11">
+                                    <div class="profession">Director de desarrollo de software</div>
+                                    <div class="description">Análisis, planificación, desarrollo y soporte de software a medida (FLOSS)
+                                        y de terceros.
+                                        <!-- <div class="highlights">Logros</div> -->
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Dirección y desarrollo de proyectos de software para empresas del grupo
+                                                GEA-21 y terceros.</li>
+                                            <li class="list-group-item">Programación de la web del Metro de Sevilla. [PHP]</li>
+                                            <li class="list-group-item">Mantenimiento y actualizaciones de ERP G-INN para Geotexan, S.A. [Python,
+                                                GPLv3]</li>
+                                            <li class="list-group-item">Desarrollo de ERP para Centro de Investigación de Carreteras de Andalucía
+                                                (CICAN). [Python, GPLv3]</li>
+                                            <li class="list-group-item">Desarrollo de software de gestión para Universal Pilates. [Python, GPLv3]</li>
+                                            <li
+                                            class="list-group-item">Administración de Microsoft SQL Server 2005 y soporte para Microsoft Business
+                                                Solutions-Navision (IberBuilding).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="row">
+                                <div class="details">
+                                    <div class="where">Atlantic Copper</div>
+                                    <div class="address"> <a href="https:&#x2F;&#x2F;www.atlantic-copper.es&#x2F;" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.atlantic-copper.es&#x2F;</a>
+
+                                    </div>
+                                    <div class="year">Junio 2004 – Septiembre 2004</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="job-details col-xs-11">
+                                    <div class="profession">Programador en prácticas fin de carrera</div>
+                                    <div class="description">Prácticas laborales formativas desarrollando software para el Departamento
+                                        de Seguridad y Medio ambiente.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="row">
+                                <div class="details">
+                                    <div class="where">Freelance Software Libre</div>
+                                    <div class="address"> <a href="https:&#x2F;&#x2F;sourceforge.net&#x2F;u&#x2F;pacoqueen&#x2F;profile"
+                                        target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;sourceforge.net&#x2F;u&#x2F;pacoqueen&#x2F;profile</a>
+
+                                    </div>
+                                    <div class="year">2000 – Noviembre 2008</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="job-details col-xs-11">
+                                    <div class="profession">Analista-programador</div>
+                                    <div class="description">Desarrollo y mantenimiento de soluciones para una cartera de 18 clientes.
+                                        Tecnologías usadas: GESCO3, dBase IV, Delphi, Interbase (firebird), C++/C,
+                                        MS-Access MDB, DAO (ADODB), Visual Basic, COBOL, Python, wxWidgets/GTK,
+                                        ReportLab, PostgreSQL, Guadalinex GNU/Linux, MTA postfix, fetchmail, spamassassin,
+                                        procmail, courier-imap, Apache, SAMBA/NIS NFS, Debian GNU/Linux, Ubuntu
+                                        GNU/Linux.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- VOLUNTEER -->
+                    <div class="box">
+                         <h2><i class= "fa fa-group ico"></i> Voluntario</h2>
+
+                        <div class="job clearfix">
+                            <div class="row">
+                                <div class="details">
+                                    <div class="where">Cibervoluntarios</div>
+                                    <div class="address"> <a href="https:&#x2F;&#x2F;www.cibervoluntarios.org&#x2F;" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.cibervoluntarios.org&#x2F;</a>
+
+                                    </div>
+                                    <div class="year">2021 – Ahora</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-11 pull-right">
+                                    <div class="profession"></div>
+                                    <div class="description"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="row">
+                                <div class="details">
+                                    <div class="where">miArcade</div>
+                                    <div class="address"> <a href="https:&#x2F;&#x2F;miarcade.com&#x2F;" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;miarcade.com&#x2F;</a>
+
+                                    </div>
+                                    <div class="year">2017 – Ahora</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-11 pull-right">
+                                    <div class="profession">DevOps</div>
+                                    <div class="description">Réplicas de máquinas arcade recreativas con emuladores de sistemas retro.
+                                        <!--
+                                        <div class="highlights">Destacados</div> -->
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Batocera</li>
+                                            <li class="list-group-item">RetroPie</li>
+                                            <li class="list-group-item">LibRetro</li>
+                                            <li class="list-group-item">RetroArch</li>
+                                            <li class="list-group-item">AttractMode</li>
+                                            <li class="list-group-item">Raspberry Pi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LANGUAGES -->
+                    <div class="box">
+                         <h2><i class="fa fa-language ico"></i> Idiomas</h2>
+
+                        <ul class="list-group">
+                            <li class=" list-group-item">Español<span class="skill badge pull-right">Nativo</span>
+                            </li>
+                            <li class=" list-group-item">English<span class="skill badge pull-right">Professional working</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5" style="width: 55%;">
+                    <!-- CONTACT -->
+                    <div class="box clearfix">
+                         <h2><i class="fa fa-bullseye ico"></i> Contacto</h2>
+
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span>
+                            </div>
+                            <div class="title only  pull-right">Huelva ES</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span>
+                            </div>
+                            <div class="title only pull-right"><a href="mailto:bogado@qinn.es" target="_blank">bogado@qinn.es</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span>
+                            </div>
+                            <div class="title only pull-right"><a href="https:&#x2F;&#x2F;qinn.es" target="_blank">https:&#x2F;&#x2F;qinn.es</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-telegram fa-fw"></span>
+                            </div>
+                            <div class="title pull-right">Telegram</div>
+                            <div class="description pull-right"><a href="https:&#x2F;&#x2F;t.me&#x2F;paco_queen" target="_blank">https:&#x2F;&#x2F;t.me&#x2F;paco_queen</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span>
+                            </div>
+                            <div class="title pull-right">LinkedIn</div>
+                            <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;pqinn" target="_blank">https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;pqinn</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span>
+                            </div>
+                            <div class="title pull-right">GitHub</div>
+                            <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;pacoqueen" target="_blank">https:&#x2F;&#x2F;github.com&#x2F;pacoqueen</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon pull-left text-center"><span class="fa fa-gitlab fa-fw"></span>
+                            </div>
+                            <div class="title pull-right">Gitlab</div>
+                            <div class="description pull-right"><a href="https:&#x2F;&#x2F;gitlab.com&#x2F;pacoqueen" target="_blank">https:&#x2F;&#x2F;gitlab.com&#x2F;pacoqueen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- EDUCATION -->
+                    <div class="box">
+                         <h2><i class="fa fa-university ico"></i> Educación</h2>
+
+                        <ul id="education" class="clearfix">
+                            <li>
+                                <div class="year pull-left">2020 Ahora</div>
+                                <div class="description pull-right">
+                                     <h3>C1b3rWall academy</h3>
+
+                                    <p></p>
+                                    <!-- <div>Courses</div> -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Ciberseguridad</li>
+                                        <li class="list-group-item">Blockchain</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="year pull-left">2020 2020</div>
+                                <div class="description pull-right">
+                                     <h3>INCIBE - Instituto Nacional de Ciberseguridad</h3>
+
+                                    <p></p>
+                                    <!-- <div>Courses</div> -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Protege tu Negocio: Ciberseguridad en el Teletrabajo</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="year pull-left">2014 2019</div>
+                                <div class="description pull-right">
+                                     <h3>MiríadaX - Telefónica Educación Digital S.L.U</h3>
+
+                                    <p></p>
+                                    <!-- <div>Courses</div> -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Agilidad y Lean</li>
+                                        <li class="list-group-item">Robots y videojuegos (Arduino + Scratch)</li>
+                                        <li class="list-group-item">Análisis estadístico de datos con R</li>
+                                        <li class="list-group-item">Programación en la nube</li>
+                                        <li class="list-group-item">Business Intelligence y Big Data</li>
+                                        <li class="list-group-item">HTML5</li>
+                                        <li class="list-group-item">Aprende WordPress de forma sencilla</li>
+                                        <li class="list-group-item">Introducción al diseño de videojuegos</li>
+                                        <li class="list-group-item">Aprende a programar aplicaciones móviles (3.ª edición)</li>
+                                        <li class="list-group-item">Introducción a la gamificación a través de casos prácticos</li>
+                                        <li class="list-group-item">Seguridad informática práctica</li>
+                                        <li class="list-group-item">Análisis de Datos Experimentales: Utilidades Básicas (2.ª edición)</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="year pull-left">2010 2011</div>
+                                <div class="description pull-right">
+                                     <h3>Plan Avanza2, - Ministerio de Industria, Turismo y Comercio.</h3>
+
+                                    <p></p>
+                                    <!-- <div>Courses</div> -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Administración Linux 9: recursos y sistemas</li>
+                                        <li class="list-group-item">Estructura y funcionamiento de Linux Red Hat 9</li>
+                                        <li class="list-group-item">Lenguaje de programación UML</li>
+                                        <li class="list-group-item">Estructura y funcionamiento de Windows Server 2003</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="year pull-left">2009 2009</div>
+                                <div class="description pull-right">
+                                     <h3>Ibermática</h3>
+
+                                    <p>Navision</p>
+                                    <!-- <div>Courses</div> -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Curso formación funcional Navision IBB</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="year pull-left">1999 2004</div>
+                                <div class="description pull-right">
+                                     <h3>Universidad de Huelva</h3>
+
+                                    <p><i class="fa fa-graduation-cap ico"></i> Ingeniero técnico en informática
+                                        de gestión</p>
+                                    <p></p>
+                                    <!-- <div>Courses</div> -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Matrículas de honor en: Programación II [Prolog], Sistemas Operativos
+                                            [Plan9 from Bell Labs], Inteligencia Artificial: Sistemas Expertos [CASPIAN],
+                                            Inteligencia Artificial: Algoritmos Evolutivos y Bioinspirados, Inteligencia
+                                            Artificial: Algoritmos heurísticos y de búsqueda.</li>
+                                        <li class="list-group-item">Instalación y configuración de un sistema GNU/Linux. (2001)</li>
+                                        <li class="list-group-item">Programación y configuración de routers. (2002)</li>
+                                        <li class="list-group-item">I jornada onubense sobre Software Libre. (2003)</li>
+                                        <li class="list-group-item">Administración avanzada de sistemas GNU/Linux (2005)</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- SKILLS -->
+                    <div class="box">
+                         <h2><i class="fa fa-tasks ico"></i> Habilidades</h2>
+
+                        <div class="skills clearfix">
+                            <div class="item-skills">GNU&#x2F;Linux <span class="skill-level">★★★</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Debian</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">Ubuntu</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Kali</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">Raspbian</span>
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">Python <span class="skill-level">★★★</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">ReportLab</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">pdb</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">pdm</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">poetry</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">sqlite</span>
+
+                                        <span
+                                        class="skill badge" style="font-weight: normal; margin-right: 2px">flask</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">behave</span>
+
+                                            <span
+                                            class="skill badge" style="font-weight: normal; margin-right: 2px">Kivy</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">DearPyGui</span>
+
+                                                <span
+                                                class="skill badge" style="font-weight: normal; margin-right: 2px">pyglet</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">sqlite</span>
+
+                                                    <span
+                                                    class="skill badge" style="font-weight: normal; margin-right: 2px">H2OWave</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">streamlit</span>
+
+                                                        <span
+                                                        class="skill badge" style="font-weight: normal; margin-right: 2px">tkinter</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">wxPython</span>
+
+                                                            <span
+                                                            class="skill badge" style="font-weight: normal; margin-right: 2px">pandas</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">numpy</span>
+
+                                                                <span
+                                                                class="skill badge" style="font-weight: normal; margin-right: 2px">telegram</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">fabric</span>
+
+                                                                    <span
+                                                                    class="skill badge" style="font-weight: normal; margin-right: 2px">paramiko</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">bleach</span>
+
+                                                                        <span
+                                                                        class="skill badge" style="font-weight: normal; margin-right: 2px">nose</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">unittest</span>
+
+                                                                            <span
+                                                                            class="skill badge" style="font-weight: normal; margin-right: 2px">remi</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">pyserial</span>
+
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">Django <span class="skill-level">★★☆</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Jinja</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">HTML5</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">CSS3</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">Taiga</span>
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">PyGTK <span class="skill-level">★★★</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">GTK</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">GNOME</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">DBus</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">Cairo</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Pillow</span>
+
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">PHP <span class="skill-level">★★☆</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">WordPress</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">WooCommerce</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Joomla</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">Drupal</span>
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">JavaScript <span class="skill-level">★☆☆</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">npm</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">NodeJS</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">PhoneGap</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">jQuery</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Brython</span>
+
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">SQL <span class="skill-level">★★☆</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">PostgrelSQL</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">SQLServer</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">MySQL</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">SQLObject</span>
+                            </div>
+                        </div>
+                        <div class="skills clearfix">
+                            <div class="item-skills">ERP <span class="skill-level">★★★</span>
+
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge" style="font-weight: normal; margin-right: 2px">Navision</span>
+
+                                <span
+                                class="skill badge" style="font-weight: normal; margin-right: 2px">Sage Murano</span> <span class="skill badge" style="font-weight: normal; margin-right: 2px">SAP</span>
+
+                                    <span
+                                    class="skill badge" style="font-weight: normal; margin-right: 2px">Odoo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <a href="https://qinn.es"><img src="https://qinn.es/staticfiles/mainpage/images/logo_qinn.png" alt="https://qinn.es" style="margin-bottom: 2em; display: block; margin-left: auto; margin-right: auto; width: 7%"></a>
+
+        </div>
+    </body>
+
+</html>
