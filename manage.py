@@ -5,6 +5,7 @@ from django_secrets.startup import check
 
 if __name__ == "__main__":
     check()   # Comprueba si existe secrets y si no, lo crea.
+    # Comentar `check` para makemessages y compilemessages.
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "portfolio.settings")
     try:
         from django.core.management import execute_from_command_line

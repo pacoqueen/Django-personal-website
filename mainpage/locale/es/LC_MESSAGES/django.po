@@ -1,0 +1,77 @@
+# Paco Queen personal webpage.
+# Copyright (C) 2022
+# This file is distributed under the same license as the Django-personal-website.
+# Francisco José Rodríguez Bogado <bogado@qinn.es>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django-personal-website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-02 16:43+0100\n"
+"PO-Revision-Date: 2022-03-02 17:00+0100\n"
+"Last-Translator: Francisco José Rodríguez Bogado <bogado@qinn.es>\n"
+"Language-Team: ES <bogado@qinn.eu>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/mainpage/contact_form.html:19
+msgid "SEND MESSAGE"
+msgstr "ENVIAR MENSAJE"
+
+#: templates/mainpage/main.html:54
+msgid "Developer"
+msgstr "Programador"
+
+#: templates/mainpage/main.html:90
+msgid "Go"
+msgstr "Ir"
+
+#: templates/mainpage/main.html:105
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/mainpage/main.html:106 templates/mainpage/main.html:239
+msgid "About"
+msgstr "Sobre mí"
+
+#: templates/mainpage/main.html:107 templates/mainpage/main.html:323
+msgid "Stuff"
+msgstr "Proyectos"
+
+#: templates/mainpage/main.html:108 templates/mainpage/main.html:371
+msgid "Badges"
+msgstr "Intereses"
+
+#: templates/mainpage/main.html:109 templates/mainpage/main.html:224
+#: templates/mainpage/main.html:401
+msgid "Contact"
+msgstr "Contacto"
+
+#: templates/mainpage/main.html:138
+msgid "Computer Science Technical Engineer"
+msgstr "Ingeniero Técnico en Informática de Gestión"
+
+#: templates/mainpage/main.html:268
+msgid "Skills"
+msgstr "Conocimientos"
+
+#: templates/mainpage/main.html:404
+msgid "Need to contact me? Use the form below."
+msgstr "¿Quieres contactar conmigo? Usa el formulario de abajo."
+
+#: templates/mainpage/main.html:470
+msgid "Made with <span id=\"heart\">♥</span> in Huelva, Spain."
+msgstr "Hecho con <span id=\"heart\">♥</span> en Huelva, España."
+
+#: templates/mainpage/main.html:472
+msgid ""
+"Thanks to <a href=\"https://github.com/vladislavalerievich/Django-personal-"
+"website\">Vlad Moroshan</a> whose project inspired this website and is "
+"forked from."
+msgstr ""
+"Gracias a <a href=\"https://github.com/vladislavalerievich/Django-personal-"
+"website\">Vlad Moroshan</a>, cuyo proyecto sirvió de base."

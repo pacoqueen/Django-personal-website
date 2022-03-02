@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +51,7 @@
   <section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
     <div class="intro">
-      <div class="start">Developer</div>
+      <div class="start">{% blocktrans %}Developer{% endblocktrans %}</div>
       <h1>Francisco José Rodríguez Bogado</h1>
       <div class="start">Free (Libre) Software</div>
     </div>
@@ -74,6 +75,21 @@
 
       <div class="container">
 
+        <form action="{% url 'set_language' %}" method="post">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}" />
+            <select name="language">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% for lang in LANGUAGES %}
+                    <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                        {{ lang.1 }} ({{ lang.0 }})
+                    </option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="{% blocktrans %}Go{% endblocktrans %}" />
+        </form>
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -86,11 +102,11 @@
 
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">About</a></li>
-            <li><a href="#portfolio">Stuff</a></li>
-            <li><a href="#badges">Badges</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">{% blocktrans %}Home{% endblocktrans %}</a></li>
+            <li><a href="#services">{% blocktrans %}About{% endblocktrans %}</a></li>
+            <li><a href="#portfolio">{% blocktrans %}Stuff{% endblocktrans %}</a></li>
+            <li><a href="#badges">{% blocktrans %}Badges{% endblocktrans %}</a></li>
+            <li><a href="#contact">{% blocktrans %}Contact{% endblocktrans %}</a></li>
           </ul>
         </div>
 
@@ -119,7 +135,7 @@
       <div class="row">
 
         <div class="col-md-12 col-lg-12">
-          <h2 class="wow slideInRight" data-wow-delay=".1s">Computer Science Technical Engineer</h2>
+          <h2 class="wow slideInRight" data-wow-delay=".1s">{% blocktrans %}Computer Science Technical Engineer{% endblocktrans %}</h2>
           <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
             <p>UHU, 2004</p>
             <div>
@@ -205,7 +221,7 @@
         </div>
 
         <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-          <a href="#contact" class="btn btn-lg">Contact</a>
+          <a href="#contact" class="btn btn-lg">{% blocktrans %}Contact{% endblocktrans %}</a>
         </div>
 
       </div><!-- .row -->
@@ -220,7 +236,7 @@
   <section id="services" class="pfblock pfblock-gray">
     <div class="container">
       <div class="row">
-            <h2 class="pfblock-title">About</h2>
+        <h2 class="pfblock-title">{% blocktrans %}About{% endblocktrans %}</h2>
             <div class="pfblock-line"></div>
 
         <div class="col-sm-4">
@@ -249,7 +265,7 @@
     </div><!-- .container -->
 
     <div class="skills col-xs-12">
-        <h2 class="pfblock-title">Skills</h2>
+      <h2 class="pfblock-title">{% blocktrans %}Skills{% endblocktrans %}</h2>
         <div class="pfblock-line"></div>
 
         <div class="row">
@@ -304,7 +320,7 @@
         <div class="col-sm-6 col-sm-offset-3">
 
           <div class="pfblock-header wow fadeInUp">
-            <h2 class="pfblock-title">Stuff</h2>
+            <h2 class="pfblock-title">{% blocktrans %}Stuff{% endblocktrans %}</h2>
             <div class="pfblock-line"></div>
             <div class="pfblock-subtitle">
 
@@ -352,7 +368,7 @@
   <section id="badges" class="pfblock pfblock-gray">
     <div class="container">
       <div class="skills col-xs-12">
-        <h2 class="pfblock-title">Badges</h2>
+        <h2 class="pfblock-title">{% blocktrans %}Badges{% endblocktrans %}</h2>
         <div class="pfblock-line"></div>
 
         <div class="row" style="display:flex">
@@ -382,10 +398,10 @@
       <div class="col-sm-6 col-sm-offset-3">
 
         <div class="pfblock-header">
-          <h2 class="pfblock-title">Contact</h2>
+          <h2 class="pfblock-title">{% blocktrans %}Contact{% endblocktrans %}</h2>
           <div class="pfblock-line"></div>
           <div class="pfblock-subtitle">
-            Need to contact me? Use the form below.
+            {% blocktrans %}Need to contact me? Use the form below.{% endblocktrans %}
           </div>
         </div>
 
@@ -451,9 +467,9 @@
             <li><a href="https://t.me/paco_queen" class="wow fadeInUp" data-wow-delay=".7s" target="_blank"><i class="fab fa-telegram"></i></a></li>
           </ul>
 
-          <p class="copyright">Made with <span id="heart">♥</span> in Huelva, Spain. <span class="copyleft">&copy;</span> {% now 'Y' %}</p>
+          <p class="copyright">{% blocktrans %}Made with <span id="heart">♥</span> in Huelva, Spain.{% endblocktrans %} <span class="copyleft">&copy;</span> {% now 'Y' %}</p>
 
-          <p class="thanks">Thanks to <a href="https://github.com/vladislavalerievich/Django-personal-website">Vlad Moroshan</a> whose project inspired this website and is forked from.</p>
+          <p class="thanks">{% blocktrans %}Thanks to <a href="https://github.com/vladislavalerievich/Django-personal-website">Vlad Moroshan</a> whose project inspired this website and is forked from.{% endblocktrans %}</p>
           <p><a href="admin/"><i class="fas fa-user-lock"></i></a></p>
           <p style="font-size: xx-large; margin: 0px"><a href="cpanel/"><i class="fab fa-cpanel"></i></a></p>
         </div>
