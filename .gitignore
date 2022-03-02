@@ -6,3 +6,6 @@ lib/
 *.pyc
 *~
 __pycache__
+.env
+lib64
+share

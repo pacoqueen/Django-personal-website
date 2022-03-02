@@ -10,12 +10,20 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
+import environ
 import os
 from my_secrets import secrets
+
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Take environment variables from .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -24,8 +32,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = secrets.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS =  ['*']
 
@@ -93,8 +101,18 @@ DATABASES = {
         'HOST': secrets.DBHOST,
         'PORT': secrets.DBPORT,
         'OPTIONS': {'sql_mode': 'STRICT_TRANS_TABLES'},
-    }
+    },
+    'extra': env.db_url(
+        'SQLITE_URL',
+        default='sqlite:////tmp/tmp-sqlite.db'
+    )
 }
+
+try:
+    if env('ENVIRONMENT') == 'DEV':
+        DATABASES['default'] = DATABASES['extra']
+except environ.ImproperlyConfigured:
+    pass
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
