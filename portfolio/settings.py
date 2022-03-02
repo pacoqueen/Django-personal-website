@@ -165,6 +165,12 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
+if env('ENVIRONMENT') == 'DEV':
+    STATIC_ROOT = ''    # It MUST be empty with manage runserver
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'portfolio', 'staticfiles'),
+    ]
+
 # For sending emails
 EMAIL_USE_TLS = True
 EMAIL_HOST = secrets.EMAIL_HOST

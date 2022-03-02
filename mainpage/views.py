@@ -18,6 +18,11 @@ def get_random_background():
     """Devuelve un nombre de fichero de entre los directorios de fondos
     para el banner `action`."""
     static = settings.STATIC_ROOT
+    if not static:
+        try:
+            static = settings.STATICFILES_DIRS[0]
+        except IndexError:
+            static = os.path.join(settings.PROJECT_ROOT, 'staticfiles')
     bgdir = os.path.join(static, "mainpage", "images", "backgrounds")
     bgs = os.listdir(bgdir)
     res = random.choice(bgs)

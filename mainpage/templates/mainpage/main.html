@@ -75,21 +75,6 @@
 
       <div class="container">
 
-        <form action="{% url 'set_language' %}" method="post">
-            {% csrf_token %}
-            <input name="next" type="hidden" value="{{ redirect_to }}" />
-            <select name="language">
-                {% get_current_language as LANGUAGE_CODE %}
-                {% get_available_languages as LANGUAGES %}
-                {% for lang in LANGUAGES %}
-                    <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
-                        {{ lang.1 }} ({{ lang.0 }})
-                    </option>
-                {% endfor %}
-            </select>
-            <input type="submit" value="{% blocktrans %}Go{% endblocktrans %}" />
-        </form>
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -100,6 +85,8 @@
           <a class="navbar-brand" href="https://qinn.es">Q inn</a>
         </div>
 
+
+
         <div class="collapse navbar-collapse" id="custom-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">{% blocktrans %}Home{% endblocktrans %}</a></li>
@@ -107,6 +94,24 @@
             <li><a href="#portfolio">{% blocktrans %}Stuff{% endblocktrans %}</a></li>
             <li><a href="#badges">{% blocktrans %}Badges{% endblocktrans %}</a></li>
             <li><a href="#contact">{% blocktrans %}Contact{% endblocktrans %}</a></li>
+            <li>
+              <span class="navbar-l10n">
+                <form action="{% url 'set_language' %}" method="post">
+                  {% csrf_token %}
+                  <input name="next" type="hidden" value="{{ redirect_to }}" />
+                  <select name="language">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% for lang in LANGUAGES %}
+                          <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                              {{ lang.1 }} ({{ lang.0 }})
+                          </option>
+                      {% endfor %}
+                  </select>
+                  <input type="submit" value="{% blocktrans %}Go{% endblocktrans %}" />
+                </form>
+              </span>
+            </li>
           </ul>
         </div>
 

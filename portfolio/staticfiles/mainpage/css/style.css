@@ -577,6 +577,19 @@ div[class^="devicon"] span{
   background: #222;
 }
 
+
+/* -----------------------------------------------/*
+ * Internacionalization and Localization (i18n l10n)
+/* -----------------------------------------------*/
+
+.navbar-l10n {
+    line-height: initial;
+}
+
+.navbar-l10n form {
+    margin-top: 1em;
+}
+
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
@@ -1013,3 +1026,4 @@ ol li:after {
 	background-repeat: no-repeat;
 	background-position: right;
 }
+
