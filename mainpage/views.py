@@ -13,6 +13,7 @@ from django.conf import settings
 from .forms import ContactForm
 from .models import Project, Badge
 
+from django.utils.translation import ugettext_lazy as _
 
 def get_random_background():
     """Devuelve un nombre de fichero de entre los directorios de fondos
@@ -37,7 +38,7 @@ class ProjectListBadgesAndFormView(SuccessMessageMixin, ListView, FormView):
 
     form_class = ContactForm
     success_url = '/' # After submiting the form keep staying on the same url
-    success_message = 'Message successfully submitted!'
+    success_message = _('Message successfully submitted!')
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
