@@ -1,0 +1,91 @@
+# Paco Queen personal webpage.
+# Copyright (C) 2022
+# This file is distributed under the same license as the Django-personal-website.
+# Francisco José Rodríguez Bogado <bogado@qinn.es>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Django-personal-website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-03 01:39+0100\n"
+"PO-Revision-Date: 2022-03-03 01:10+0100\n"
+"Last-Translator: Francisco José Rodríguez Bogado <bogado@qinn.es>\n"
+"Language-Team: ES <bogado@qinn.eu>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: settings.py:143
+msgid "English"
+msgstr "Inglés"
+
+#: settings.py:144
+msgid "Spanish"
+msgstr "Español"
+
+#: settings.py:184
+msgid "Cookie settings"
+msgstr "Configuración de cookies"
+
+#: settings.py:185
+msgid ""
+"This website uses optional cookies for analytics and usability purposes. It "
+"does not collect any personal data."
+msgstr ""
+"Este sitio web usa cookies opcionales para análisis estadísticos y por motivos"
+"de usabilidad. No recopila ningún dato personal."
+
+#: settings.py:186
+msgid ""
+"Essential cookies are used for proper functioning and can't be declined."
+msgstr ""
+"Las cookies esenciales son necesarias para el funcionamiento del sitio y no pueden ser rechazadas."
+
+#: settings.py:188
+msgid "AEPD"
+msgstr "AEPD"
+
+#: settings.py:189
+msgid "GDPR"
+msgstr "RGPD"
+
+#: settings.py:194
+msgid "Essential"
+msgstr "Esenciales"
+
+#: settings.py:195
+msgid "Essential cookies allow this page to work."
+msgstr "Las cookies esenciales son intrínsecas al funcionamiento del sitio."
+
+#: settings.py:199
+msgid "Meta cookie for the cookies that are set."
+msgstr "Meta cookie para guardar la configuración de cookies."
+
+#: settings.py:203
+msgid "This cookie prevents Cross-Site-Request-Forgery attacks."
+msgstr "Esta cookie previene ataques del tipo Cross-Site-Request-Forgery"
+
+#: settings.py:207
+msgid "This cookie is necessary to allow logging in, for example."
+msgstr "Esta cookie es necesaria para permitir identificar sesiones, por ejemplo."
+
+#: settings.py:213
+msgid "Analytics"
+msgstr "Analíticas"
+
+#: settings.py:218
+msgid "Google Analytics cookies for website analysis."
+msgstr "Cookies de Google Analytics"
+
+#: settings.py:224
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: settings.py:229
+msgid ""
+"Allows to display webpage in selected language and remember on next visits."
+msgstr ""
+"Permite mostrar la página web en el idioma seleccionado y recordarlo en siguientes visitas."

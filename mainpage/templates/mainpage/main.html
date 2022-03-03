@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load cookiebanner %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,14 +11,17 @@
   <meta name="author" content="Francisco José Rodríguez Bogado">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8BYF1CY23"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  {% cookie_accepted 'analytics' as cookie_analytics %}
+  {% if cookie_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8BYF1CY23"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-S8BYF1CY23');
-  </script>
+      gtag('config', 'G-S8BYF1CY23');
+    </script>
+  {% endif %}
   <!-- End Google Analytics -->
 
   <link type="text/css" href="https://fonts.googleapis.com/css?family=Abril Fatface|Barlow Condensed|Chakra Petch|Montserrat|Raleway" rel="stylesheet">
@@ -496,6 +500,8 @@
   <script src="{% static 'mainpage/js/waypoints.min.js' %}"></script>
   <script src="{% static 'mainpage/js/jquery.cbpQTRotator.js' %}"></script>
   <script src="{% static 'mainpage/js/custom.js' %}"></script>
+
+  {% cookiebanner_modal 'vanilla' %}
 
 </body>
 </html>
