@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_secrets',
+    'cookiebanner',
+    'hitcount',
 ]
 
 MIDDLEWARE = [
@@ -180,3 +182,58 @@ EMAIL_HOST = secrets.EMAIL_HOST
 EMAIL_HOST_USER = secrets.EMAIL_USER
 EMAIL_HOST_PASSWORD = secrets.EMAIL_PASSWORD
 EMAIL_PORT = 587
+
+# RGPD cookie banner
+COOKIEBANNER = {
+    "title": _("Cookie settings"),
+    "header_text": _("This website uses optional cookies for analytics and usability purposes. It does not collect any personal data."),
+    "footer_text": _("Essential cookies are used for proper functioning and can't be declined."),
+    "footer_links": [
+        {"title": _("AEPD"), "href": "https://www.aepd.es/es"},
+        {"title": _("GDPR"), "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02016R0679-20160504"},
+    ],
+    "groups": [
+        {
+            "id": "essential",
+            "name": _("Essential"),
+            "description": _("Essential cookies allow this page to work."),
+            "cookies": [
+                {
+                    "pattern": "cookiebanner",
+                    "description": _("Meta cookie for the cookies that are set."),
+                },
+                {
+                    "pattern": "csrftoken",
+                    "description": _("This cookie prevents Cross-Site-Request-Forgery attacks."),
+                },
+                {
+                    "pattern": "sessionid",
+                    "description": _("This cookie is necessary to allow logging in, for example."),
+                },
+            ],
+        },
+        {
+            "id": "analytics",
+            "name": _("Analytics"),
+            "optional": True,
+            "cookies": [
+                {
+                    "pattern": "ga_.*",
+                    "description": _("Google Analytics cookies for website analysis."),
+                },
+            ],
+        },
+        {
+            "id": "preferences",
+            "name": _("Preferences"),
+            "optional": True,
+            "cookies": [
+                {
+                    "pattern": "django_language",
+                    "description": _("Allows to display webpage in selected language and remember on next visits."),
+                },
+            ],
+        },
+    ],
+}
+

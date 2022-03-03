@@ -13,6 +13,9 @@ from django.conf import settings
 from .forms import ContactForm
 from .models import Project, Badge
 
+from django.utils.translation import ugettext_lazy as _
+
+from hitcount.views import HitCountDetailView
 
 def get_random_background():
     """Devuelve un nombre de fichero de entre los directorios de fondos
@@ -28,7 +31,24 @@ def get_random_background():
     res = random.choice(bgs)
     return res
 
-class ProjectListBadgesAndFormView(SuccessMessageMixin, ListView, FormView):
+def get_object_for_count(title="qinn.es"):
+    """
+    hitcount need one object. I will use one that for sure is present
+    **in my instace**.
+    If not possible, it uses one project. If not projects created, it will fail.
+    """
+    try:
+        proyecto = Project.objects.filter(title=title)[0]
+    except IndexError:
+        try:
+            proyecto = Project.objects.all()[0]
+        except IndexError:
+            proyecto = None
+    return proyecto
+
+
+class ProjectListBadgesAndFormView(SuccessMessageMixin, ListView, FormView,
+                                   HitCountDetailView):
     model = Project # data from database
     template_name = 'mainpage/main.html'
     context_object_name = 'list_projects' # name of the var in html template
@@ -37,7 +57,12 @@ class ProjectListBadgesAndFormView(SuccessMessageMixin, ListView, FormView):
 
     form_class = ContactForm
     success_url = '/' # After submiting the form keep staying on the same url
-    success_message = 'Message successfully submitted!'
+    success_message = _('Message successfully submitted!')
+
+    # Needed for hitcount:
+    count_hit = True
+    object = get_object_for_count("qinn.es")
+    # TODO: Can I check from view if analytic cookie consent is accepted?
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.

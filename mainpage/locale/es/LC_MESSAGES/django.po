@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Django-personal-website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-02 16:43+0100\n"
+"POT-Creation-Date: 2022-03-03 08:49+0100\n"
 "PO-Revision-Date: 2022-03-02 17:00+0100\n"
 "Last-Translator: Francisco José Rodríguez Bogado <bogado@qinn.es>\n"
 "Language-Team: ES <bogado@qinn.eu>\n"
@@ -22,52 +22,52 @@ msgstr ""
 msgid "SEND MESSAGE"
 msgstr "ENVIAR MENSAJE"
 
-#: templates/mainpage/main.html:54
+#: templates/mainpage/main.html:56
 msgid "Developer"
 msgstr "Programador"
 
-#: templates/mainpage/main.html:90
-msgid "Go"
-msgstr "Ir"
-
-#: templates/mainpage/main.html:105
+#: templates/mainpage/main.html:94
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/mainpage/main.html:106 templates/mainpage/main.html:239
+#: templates/mainpage/main.html:95 templates/mainpage/main.html:246
 msgid "About"
 msgstr "Sobre mí"
 
-#: templates/mainpage/main.html:107 templates/mainpage/main.html:323
+#: templates/mainpage/main.html:96 templates/mainpage/main.html:330
 msgid "Stuff"
 msgstr "Proyectos"
 
-#: templates/mainpage/main.html:108 templates/mainpage/main.html:371
+#: templates/mainpage/main.html:97 templates/mainpage/main.html:378
 msgid "Badges"
 msgstr "Intereses"
 
-#: templates/mainpage/main.html:109 templates/mainpage/main.html:224
-#: templates/mainpage/main.html:401
+#: templates/mainpage/main.html:98 templates/mainpage/main.html:231
+#: templates/mainpage/main.html:408
 msgid "Contact"
 msgstr "Contacto"
 
-#: templates/mainpage/main.html:138
+#: templates/mainpage/main.html:113
+msgid "Go"
+msgstr "Ir"
+
+#: templates/mainpage/main.html:145
 msgid "Computer Science Technical Engineer"
 msgstr "Ingeniero Técnico en Informática de Gestión"
 
-#: templates/mainpage/main.html:268
+#: templates/mainpage/main.html:275
 msgid "Skills"
 msgstr "Conocimientos"
 
-#: templates/mainpage/main.html:404
+#: templates/mainpage/main.html:411
 msgid "Need to contact me? Use the form below."
 msgstr "¿Quieres contactar conmigo? Usa el formulario de abajo."
 
-#: templates/mainpage/main.html:470
+#: templates/mainpage/main.html:477
 msgid "Made with <span id=\"heart\">♥</span> in Huelva, Spain."
 msgstr "Hecho con <span id=\"heart\">♥</span> en Huelva, España."
 
-#: templates/mainpage/main.html:472
+#: templates/mainpage/main.html:479
 msgid ""
 "Thanks to <a href=\"https://github.com/vladislavalerievich/Django-personal-"
 "website\">Vlad Moroshan</a> whose project inspired this website and is "
@@ -75,3 +75,7 @@ msgid ""
 msgstr ""
 "Gracias a <a href=\"https://github.com/vladislavalerievich/Django-personal-"
 "website\">Vlad Moroshan</a>, cuyo proyecto sirvió de base."
+
+#: views.py:41
+msgid "Message successfully submitted!"
+msgstr "¡Mensaje enviado!"
