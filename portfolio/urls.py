@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 
+handler404 = 'mainpage.views.custom_page_not_found_view'
+handler500 = 'mainpage.views.custom_page_server_error'
+
 urlpatterns = [
     url(r'^', include('mainpage.urls')),
     url(r'^admin/', admin.site.urls),
