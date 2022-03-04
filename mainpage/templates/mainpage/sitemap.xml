@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://www.qinn.es/</loc>
+    <lastmod>2022-03-03</lastmod>
+  </url>
+  <url>
+    <loc>https://qinn.es/staticfiles/mainpage/resume/resume.html</loc>
+    <lastmod>2022-03-01</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://qinn.es/staticfiles/mainpage/resume/resume_en.html"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://qinn.es/staticfiles/mainpage/resume/resume.html"/>
+  </url>
+  <url>
+    <loc>https://qinn.es/staticfiles/mainpage/resume/resume_en.html</loc>
+    <lastmod>2022-03-01</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="es"
+      href="https://qinn.es/staticfiles/mainpage/resume/resume.html"/>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://qinn.es/staticfiles/mainpage/resume/resume_en.html"/>
+  </url>
+</urlset>
