@@ -269,6 +269,17 @@
           </div>
         </div>
 
+      {% get_current_language as LANGUAGE_CODE %}
+      {% if LANGUAGE_CODE == "es" %}
+        <a href="{% static 'mainpage/resume/CV_gr_ES.svg' %}">
+          <img id="cv_grafico" src="{% static 'mainpage/resume/CV_gr_ES.svg' %}" alt="CV gráfico">
+        </a>
+      {% else %}
+        <a href="{% static 'mainpage/resume/CV_gr_EN.svg' %}">
+          <img id="cv_grafico" src="{% static 'mainpage/resume/CV_gr_EN.svg' %}" alt="Graphical resume">
+        </a>
+      {% endif %}
+
     </div><!-- .container -->
 
     <div class="skills col-xs-12">
