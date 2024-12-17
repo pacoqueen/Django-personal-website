@@ -187,7 +187,7 @@ EMAIL_PORT = 587
 # RGPD cookie banner
 COOKIEBANNER = {
     "title": _("Cookie settings"),
-    "header_text": _("This website uses optional cookies for analytics and usability purposes. It does not collect any personal data."),
+    "header_text": _("This website uses optional cookies for usability purposes. It does not collect any personal data."),
     "footer_text": _("Essential cookies are used for proper functioning and can't be declined."),
     "footer_links": [
         {"title": _("AEPD"), "href": "https://www.aepd.es/es"},
@@ -210,17 +210,6 @@ COOKIEBANNER = {
                 {
                     "pattern": "sessionid",
                     "description": _("This cookie is necessary to allow logging in, for example."),
-                },
-            ],
-        },
-        {
-            "id": "analytics",
-            "name": _("Analytics"),
-            "optional": True,
-            "cookies": [
-                {
-                    "pattern": "ga_.*",
-                    "description": _("Google Analytics cookies for website analysis."),
                 },
             ],
         },
