@@ -4,7 +4,7 @@ This is a fork from Django-based personal website created by [Vlad Moroshan](htt
 
 [Live site](https://qinn.es).
 
-# Installation and Running
+## Installation and Running
 
 * Run the command `git clone <repository-url>` to have this repository locally in your computer.
 * `sudo apt-get install -y mariadb-server libmariadb-dev`
